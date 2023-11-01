@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { GetUnitsService } from 'src/app/services/get-units.service';
+import { Location } from 'src/app/types/location.interface';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { GetUnitsService } from 'src/app/services/get-units.service';
   styleUrls: ['./forms.component.scss']
 })
 export class FormsComponent implements OnInit {
-  results: Location[]  = [];
+  results: Location[] = [];
   filteredResults: Location[] = [];
   formGroup!: FormGroup;
 
