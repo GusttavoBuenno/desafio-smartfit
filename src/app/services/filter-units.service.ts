@@ -22,6 +22,9 @@ type  HOUR_INDEXES = 'morning' | 'afternoon' | 'night'
   providedIn: 'root'
 })
 export class FilterUnitsService {
+  setFilteredUnits(filteredResults: Location[]) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor() { }
 
